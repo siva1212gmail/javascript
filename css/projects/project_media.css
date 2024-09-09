@@ -1,0 +1,173 @@
+@media (max-width: 480px) {
+
+   
+   
+   
+.icons{
+
+    margin-left: 4px;
+}
+
+
+
+
+@keyframes lineAnimation {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0); /* Match the height of your line */
+    }
+  }
+  
+  @keyframes iconPopUp {
+    from {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .line {
+    
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    margin-top: 39.5rem;
+    width: 3px;
+    height: 100px; /* Start with height 0 */
+    animation: lineAnimation 1s ease-out backwards;
+    animation-delay: 1s;
+  }
+  
+  .whatsapp {
+    position: fixed;
+    font-size: 25px;
+    margin-top: 33.5rem;
+    margin-left: -1px;
+    opacity: 0; /* Start with opacity 0 */
+    animation: iconPopUp 1s ease-out forwards;
+    animation-delay: 2s; /* Delay to start after line animation */
+  }
+  
+  .instagram {
+    color: red;
+    position: fixed;
+    font-size: 35px;
+    margin-top: 31rem;
+    margin-left: -14px;
+    opacity: 0; /* Start with opacity 0 */
+    animation: iconPopUp 1s ease-out forwards;
+    animation-delay: 1.5s; /* Delay to start after previous icon */
+  }
+  
+  .linkedin {
+    color: blue;
+    position: fixed;
+    font-size: 35px;
+    margin-top: 28.5rem;
+    margin-left: -14px;
+    opacity: 0; /* Start with opacity 0 */
+    animation: iconPopUp 1s ease-out forwards;
+    animation-delay: 1s; /* Delay to start after previous icon */
+  }
+  
+  .githup{
+    color: rgb(255, 254, 254);
+    position: fixed;
+    font-size: 35px;
+    margin-top: 26rem;
+    margin-left: -14px;
+    opacity: 0; /* Start with opacity 0 */
+    animation: iconPopUp 1s ease-out forwards;
+    animation-delay: 0.5s; /* Delay to start after previous icon */
+  }
+        
+        
+        
+        
+        .innercard {
+            position: relative;
+            width: 200px;
+            height: 300px;
+            perspective: 1000px; 
+            flex-shrink: 0;
+        }
+       
+        
+        
+        
+      
+   
+        .front h1{
+        position: fixed;
+          color:black;
+          font-size: 20px;
+          font-weight: 700;
+          margin-top: -190px;
+        }
+        
+        .front p{
+            font-size: 13px;
+        text-align: center;
+        margin-top: 100px;
+        font-weight: 500;
+         
+        }
+        
+      
+        
+        .back img{
+        position: fixed;
+          margin-top: -100px;
+          width: 145px;
+          height: 100px;
+        }
+        
+        .card_line{
+          position: fixed;
+        color: aliceblue;
+          background-color: aliceblue;
+          height: 2px;
+          width: 145px;
+          margin-top: 25px;
+        }
+        
+        .cod_languvage{
+        
+        margin-top: 130px;
+        width: 200px;
+        margin-left: 20px;
+        
+        }
+        
+        .cod_languvage span{
+        
+          color: rgb(242, 235, 235);
+     
+          font-weight: bold;
+          font-size: 10px;
+          width: 100px;
+          padding: 5px;
+        
+          
+          
+        }
+        
+        .back button{
+        
+        margin-right: 100px;
+        margin-top: 10px;
+        height: 25px;
+        width: 80px;
+        border-bottom-left-radius: 50px;
+        font-weight:bolder;
+        text-align:center;
+        padding-bottom: 1px;
+        font-size: 12px;
+        
+        }
+        
+    }

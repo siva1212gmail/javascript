@@ -1,0 +1,326 @@
+
+
+ /*------------------body desighs ------------ */
+body{
+
+    transition: transform 1s, background-position 1s;
+    background-color: #000000;
+
+    height: 100%;
+    /* Prevent scrolling */
+    background-position: 0% 0%;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ /* -------------- icon design and animation ----------------- */
+
+.icons{
+
+    margin-left: 25px;
+}
+
+
+
+
+@keyframes lineAnimation {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0); /* Match the height of your line */
+    }
+  }
+  
+  @keyframes iconPopUp {
+    from {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .line {
+    
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    margin-top: 37rem;
+    width: 3px;
+    height: 150px; /* Start with height 0 */
+    animation: lineAnimation 1s ease-out backwards;
+    animation-delay: 1s;
+  }
+  
+  .whatsapp {
+    position: fixed;
+    font-size: 35px;
+    margin-top: 33.5rem;
+    margin-left: -14px;
+    opacity: 0; /* Start with opacity 0 */
+    animation: iconPopUp 1s ease-out forwards;
+    animation-delay: 2s; /* Delay to start after line animation */
+  }
+  
+  .instagram {
+    color: red;
+    position: fixed;
+    font-size: 35px;
+    margin-top: 31rem;
+    margin-left: -14px;
+    opacity: 0; /* Start with opacity 0 */
+    animation: iconPopUp 1s ease-out forwards;
+    animation-delay: 1.5s; /* Delay to start after previous icon */
+  }
+  
+  .linkedin {
+    color: blue;
+    position: fixed;
+    font-size: 35px;
+    margin-top: 28.5rem;
+    margin-left: -14px;
+    opacity: 0; /* Start with opacity 0 */
+    animation: iconPopUp 1s ease-out forwards;
+    animation-delay: 1s; /* Delay to start after previous icon */
+  }
+  
+  .githup{
+    color: rgb(255, 254, 254);
+    position: fixed;
+    font-size: 35px;
+    margin-top: 26rem;
+    margin-left: -14px;
+    opacity: 0; /* Start with opacity 0 */
+    animation: iconPopUp 1s ease-out forwards;
+    animation-delay: 0.5s; /* Delay to start after previous icon */
+  }
+
+
+   /* ------------------------------icon design end---------------------- */
+   
+  
+   
+   .card{
+
+display: flex;
+flex-direction: row;
+height: 100vh;
+align-items: center;
+justify-content:flex-start;
+color: white;
+overflow-x: auto; 
+padding: 60px;
+width: 100%;
+gap: 140px;
+background-color: #000000;
+transform: rotateY('0deg');
+cursor:grab;
+
+   }
+
+
+
+
+.innercard {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    perspective: 1000px; 
+    flex-shrink: 0;
+}
+.innercard .card-content{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+}
+
+
+
+
+.innercard .front,.innercard .back{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   
+   
+
+}
+.innercard .front{
+
+    background-color: aliceblue;
+    color: #000000;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+  
+}
+
+.front h1{
+position: fixed;
+  color:black;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: -190px;
+}
+
+.front p{
+text-align: center;
+margin-top: 100px;
+font-weight: 500;
+ 
+}
+
+.innercard .back{
+    display: flex;
+    flex-direction: column;
+    background: rgb(0, 0, 0,0.8);
+    color: #000000;
+    border: 2px solid white;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    position: fixed;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+
+    
+    
+}
+
+.back img{
+position: fixed;
+  margin-top: -70px;
+}
+
+.card_line{
+  position: fixed;
+color: aliceblue;
+  background-color: aliceblue;
+  height: 2px;
+  width: 250px;
+  margin-top: 100px;
+}
+
+.cod_languvage{
+
+margin-top: 200px;
+width: 240px;
+margin-left: -15px;
+
+}
+
+.cod_languvage span{
+
+  color: rgb(242, 235, 235);
+  padding: 11px;
+  font-weight: bold;
+
+  
+  
+}
+
+.back button{
+
+margin-right: 150px;
+margin-top: 10px;
+height: 40px;
+width: 100px;
+border-bottom-left-radius: 50px;
+font-weight:bolder;
+text-align:center;
+padding-bottom: 1px;
+font-size: 15px;
+
+}
+
+
+.innercard:hover .card-content {
+    transform: rotateY(180deg);
+}
+
+
+.innercard .back {
+    transform: rotateY(180deg);
+}
+
+
+
+
+/* 
+.innercard .card-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+}
+
+
+.innercard .front, .innercard .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; 
+}
+
+
+.innercard .back {
+    transform: rotateY(180deg);
+}
+
+
+.innercard:hover .card-content {
+    transform: rotateY(180deg);
+}
+
+
+.innercard .front {
+    background-color: #fcf6f4;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    color: #080808;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.innercard .back {
+    background-color: #e1420d;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    color: #080808;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: rotateY(180deg);
+}  */
+
+
+
+
+.card::-webkit-scrollbar {
+  display: none;
+}

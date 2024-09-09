@@ -1,0 +1,307 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+ 
+
+  /*-----------------------------------  navbar css ------------------------------------------*/
+  .nav {
+    display: flex;
+    justify-content: center;
+    margin-left: -12px;
+     /* Adjusted gap */
+    padding: 10px 0; /* Added padding */
+    position: fixed; /* Make sure navbar stays on top */
+    width: 100%; /* Full-width navbar */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure it appears above other elements */
+  }
+
+  .nave-ele {
+    text-decoration: none;
+    font-family: "Karla", sans-serif;
+   
+     font-weight: 700;
+    font-size: 25px;
+    color: rgb(255, 253, 253);
+  }
+  .nave-ele.white {
+    text-decoration: none;
+    font-family: "Karla", sans-serif;
+    font-weight: 700;
+    margin-left: 41%;
+   font-size: 26px;
+    color: rgb(0, 0, 0);
+  }
+
+
+  .skill{
+
+    position: fixed;
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+    font-family: "Karla", sans-serif;
+     font-weight: 700;
+    font-size: 26px;
+  
+    margin-top: 13%;
+    margin-left: 98%;
+    transform: rotatez(90deg);
+  }
+
+  .about{
+
+    position: fixed;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: "Karla", sans-serif;
+     font-weight: 700;
+    font-size: 26px;
+  margin-right: 43.7%;
+    margin-top: 42rem;
+   
+   
+
+  }
+
+  
+  .project{
+
+    position: fixed;
+    color:black;
+    text-decoration: none;
+    font-family: "Karla", sans-serif;
+     font-weight: 700;
+    font-size: 26px;
+    margin-left: 47%;
+    margin-top: 42rem;
+   
+   
+  }
+
+
+
+
+.slide{
+
+  transition: transform 1s, background-position 1s;
+
+  height: 100%;
+  background: linear-gradient(to right, black 50%, #fcf6f4 50%);
+  overflow: hidden; /* Prevent scrolling */
+  background-position: 0% 0%;
+}
+
+
+
+
+
+
+
+
+.text{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+     height: 750px;
+     padding: 0; /* Added */
+     margin: 0;
+     transition: background-color 2s ease-in-out;
+    
+   }
+   
+   .innertext{
+    
+     padding-left: 30px;
+    
+     color: white;
+     
+     right: 0;
+     padding-right: 0;
+     border-right: none !important;
+    
+    height: 400px;
+     transition: 2s;
+    
+    
+   }
+   
+   
+   .new{
+       padding: 0;
+       margin: 0;
+       height: 0px;
+       transition: 2s;
+       overflow-y: hidden;
+       border-right: none !important;
+     
+     
+       
+   }
+   
+   .innertext h1{
+     margin-top: -10px;
+     
+     font-size: 70px;
+     font-weight: 700;
+     text-shadow: 6cap;
+     
+     
+   }
+   
+   .name{
+   font-size: 50px;
+   font-weight: 500;
+   margin-bottom: -5px;
+   margin-top: -5px;
+   
+   
+   }
+   
+   .desc{
+     
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: rgba(252, 246, 244, 0.6);
+       font-size: calc(0.5rem + 1.3vw);
+       font-weight: 300;
+       cursor: crosshair;
+     padding-right: 30px;
+   }
+   
+   
+   .image{
+       padding: 0;
+       margin: 0;
+     
+       
+    }
+    
+    .innernext{
+    position: relative;
+    
+     height: 0;
+     border: none;
+     border-left: none !important;
+    
+      
+      transition: 2s;
+      
+    }
+   
+   .innernext img{
+   
+   
+    transition: 1s;
+    visibility: hidden;
+    opacity: 0;
+    
+    
+   }
+   
+   
+   
+   
+   .active{
+   
+     padding-top: 40px;
+     padding-bottom: 40px;
+   }
+   
+   .hide{
+   
+     position: fixed;
+     top: 0;
+     left: 0;
+     background-color:#fcf6f4;
+     height: 800px;
+     width: 770px;
+     transform: translateX(0%);
+     transition: 1s;
+   }
+   
+   .user2 {
+     position: absolute;
+     bottom: -9px;
+     left: 20%;
+     transform: translate(-10%, 0%);
+     width: 60%;
+   
+     height: auto; /* Adjust margin to fit the design */
+   }
+   @keyframes lineAnimation {
+     from {
+       transform: translateY(100%);
+     }
+     to {
+       transform: translateY(0); /* Match the height of your line */
+     }
+   }
+   
+   @keyframes iconPopUp {
+     from {
+       opacity: 0;
+       transform: translateY(-100%);
+     }
+     to {
+       opacity: 1;
+       transform: translateY(0);
+     }
+   }
+   
+   .line {
+     
+     position: fixed;
+     background-color: rgb(255, 255, 255);
+     margin-top: 37rem;
+     width: 3px;
+     height: 150px; /* Start with height 0 */
+     animation: lineAnimation 1s ease-out backwards;
+     animation-delay: 1s;
+   }
+   
+   .whatsapp {
+     position: fixed;
+     font-size: 35px;
+     margin-top: 33.5rem;
+     margin-left: -14px;
+     opacity: 0; /* Start with opacity 0 */
+     animation: iconPopUp 1s ease-out forwards;
+     animation-delay: 2s; /* Delay to start after line animation */
+   }
+   
+   .instagram {
+     color: red;
+     position: fixed;
+     font-size: 35px;
+     margin-top: 31rem;
+     margin-left: -14px;
+     opacity: 0; /* Start with opacity 0 */
+     animation: iconPopUp 1s ease-out forwards;
+     animation-delay: 1.5s; /* Delay to start after previous icon */
+   }
+   
+   .linkedin {
+     color: blue;
+     position: fixed;
+     font-size: 35px;
+     margin-top: 28.5rem;
+     margin-left: -14px;
+     opacity: 0; /* Start with opacity 0 */
+     animation: iconPopUp 1s ease-out forwards;
+     animation-delay: 1s; /* Delay to start after previous icon */
+   }
+   
+   .githup{
+     color: rgb(255, 254, 254);
+     position: fixed;
+     font-size: 35px;
+     margin-top: 26rem;
+     margin-left: -14px;
+     opacity: 0; /* Start with opacity 0 */
+     animation: iconPopUp 1s ease-out forwards;
+     animation-delay: 0.5s; /* Delay to start after previous icon */
+   }

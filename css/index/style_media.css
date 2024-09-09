@@ -1,0 +1,281 @@
+
+@media (max-width: 480px) {
+
+    .line{
+      position: fixed;
+        background-color: rgb(2, 2, 2);
+        margin-top: 38.8rem;
+        margin-left: -5px;
+        width: 2.5px;
+        height: 110px !important;
+      }
+  
+  
+      .whatsapp {
+        position: fixed;
+        font-size: 25px;
+        margin-top: 36.5rem;
+        margin-left: -14px;
+        opacity: 0; /* Start with opacity 0 */
+        animation: iconPopUp 1s ease-out forwards;
+        animation-delay: 1s; /* Delay to start after line animation */
+      }
+      
+      .instagram {
+        color: red;
+        position: fixed;
+        font-size: 25px;
+        margin-top: 34.5rem;
+        margin-left: -14px;
+        opacity: 0; /* Start with opacity 0 */
+        animation: iconPopUp 1s ease-out forwards;
+        animation-delay: 1.5s; /* Delay to start after previous icon */
+      }
+      
+      .linkedin {
+        color: blue;
+        position: fixed;
+        font-size: 25px;
+        margin-top: 32.5rem;
+        margin-left: -14px;
+        opacity: 0; /* Start with opacity 0 */
+        animation: iconPopUp 1s ease-out forwards;
+        animation-delay: 2s; /* Delay to start after previous icon */
+      }
+      
+      .githup {
+        color: rgb(0, 0, 0);
+        position: fixed;
+        font-size: 25px;
+        margin-top: 30.5rem;
+        margin-left: -14px;
+        opacity: 0; /* Start with opacity 0 */
+        animation: iconPopUp 1s ease-out forwards;
+        animation-delay: 2.5s; /* Delay to start after previous icon */
+      }
+  
+  
+     
+  
+  
+    
+  
+  
+    .nave-ele {
+      text-decoration: none;
+      font-family: "Karla", sans-serif;
+      margin-right: 50% !important;
+       font-weight: 700;
+      font-size: 18px;
+      color: rgb(255, 253, 253);
+    }
+    .nave-ele.white {
+      text-decoration: none;
+      font-family: "Karla", sans-serif;
+      font-weight: 700;
+      margin-left: 10% !important;
+      margin-top: -26px;
+     font-size: 18px;
+     margin-left: 80% !important;
+      color: rgb(246, 245, 245);
+    }
+  
+  
+    .skill{
+  
+      position: fixed;
+      color: rgb(255, 248, 248);
+      text-decoration: none;
+      font-family: "Karla", sans-serif;
+       font-weight: 700;
+      font-size: 18px;
+    
+      margin-top: 25%;
+      margin-left: 93%;
+      transform: rotatez(90deg);
+    }
+  
+    .about{
+  
+      position: fixed;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      font-family: "Karla", sans-serif;
+       font-weight: 700;
+      font-size: 18px;
+    margin-right: 43.7%;
+      margin-top: 42rem;
+     
+     
+  
+    }
+  
+    
+    .project{
+  
+      position: fixed;
+      color:black;
+      text-decoration: none;
+      font-family: "Karla", sans-serif;
+       font-weight: 700;
+      font-size: 18px;
+      margin-left: 32%;
+      margin-top: 42rem;
+     
+     
+    }
+  
+  
+  
+      /* Styles for small mobile devices */
+      html, body {
+          height: 100%;
+          background: linear-gradient(to top,#fcf6f4 50%, black 50%);
+          overflow: hidden; /* Prevent scrolling */
+        }
+  
+  
+        .text{
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          right: 0;
+           height: 300px;
+           padding: 0; /* Added */
+           margin: 0;
+           transition: background-color 2s ease-in-out;
+          
+         }
+          
+         
+         .new{
+          display: block;
+            
+             width: 80%;
+             height: 0px !important;
+           
+             border-right: 2px solid white !important;
+             
+             border-bottom:none !important;
+             align-items: end;
+             
+         }
+  
+         .innertext{
+  
+         padding: 0;
+         margin-left: 18px;
+         width: 100%;
+         
+         }
+         
+         .innertext h1{
+           margin-top: -60px;
+           font-size: 4vh;
+           font-weight: 700;
+           text-shadow: 6cap;
+           
+           
+         }
+         
+         .name{
+         font-size: 25px;
+         font-weight: 500;
+       
+     
+         
+         
+         }
+         
+         .desc{
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          color: rgba(252, 246, 244, 0.6);
+          font-size: calc(0.5rem + 1.5vw);
+          font-weight: 300;
+          cursor: crosshair;
+    margin-top: 6px;
+        
+        
+         text-align:start;
+        
+         
+    
+          
+               
+         
+         }
+         
+         
+         .image{
+             padding: 0 10%;
+             margin: 0;
+             
+             
+             
+          }
+          
+          .innernext{
+          position: relative;
+       height: 250px !important;
+       
+       
+           border-top: none !important;
+          
+            
+            transition: 2s;
+            
+          }
+         
+         .innernext img{
+         
+         
+          transition: 1s;
+          visibility: hidden;
+          opacity: 0.10;
+          
+          
+         }
+         
+         
+         
+         
+         .active{
+         
+           padding-top: 40px;
+           padding-bottom: 40px;
+         }
+         
+         
+  
+  .small{
+  
+      position: fixed;
+           top: 0;
+           left: 0;
+           background-color:#fcf6f4;
+           height: 800px;
+           width: 770px;
+           transition: 2s;
+           
+           
+  
+  
+  }       .user2 {
+         
+          position: absolute;
+          bottom: -2px;
+          left: 20%;
+          transform: translate(-10%, 0%);
+          width: 55%;
+         
+          height: auto; 
+          
+          /* Adjust margin to fit the design */
+         }
+         
+  .first2{
+  
+  height: 124.8px;
+  
+  }
+  }
