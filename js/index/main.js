@@ -80,6 +80,14 @@ function call(){
 
      
     };
+
+const skills=document.querySelector(".project")
+
+skills.addEventListener("click",()=>{
+const slid=document.querySelector(".slide")
+
+
+slid.style.transform="translatex(-100%)"
     
 
 
