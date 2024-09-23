@@ -23,6 +23,35 @@ body{
     margin-left: 25px;
 }
 
+.inner_con{
+
+  position: relative; 
+}
+
+.explore{
+
+font-size: 50px;
+  height: 150px !important;
+  color: rgb(250, 246, 246,0.5);
+  font-weight: 600;
+  margin-bottom: -80px; 
+  margin-top: 30px;
+}
+
+.inner_second{
+
+
+}
+
+
+.work{
+  font-size: 100px;
+  height: 150px !important;
+  color: rgb(250, 246, 246,0.5);
+  font-weight: 600;
+margin-top: -40px;
+ margin-bottom: 80px;
+}
 
 
 
@@ -46,59 +75,61 @@ body{
     }
   }
   
-  .line {
-    
-    position: fixed;
-    background-color: rgb(255, 255, 255);
-    margin-top: 37rem;
-    width: 3px;
-    height: 150px; /* Start with height 0 */
-    animation: lineAnimation 1s ease-out backwards;
-    animation-delay: 1s;
-  }
+.line {
   
-  .whatsapp {
-    position: fixed;
-    font-size: 35px;
-    margin-top: 33.5rem;
-    margin-left: -14px;
-    opacity: 0; /* Start with opacity 0 */
-    animation: iconPopUp 1s ease-out forwards;
-    animation-delay: 2s; /* Delay to start after line animation */
-  }
+
+  background-color: rgb(255, 255, 255);
+  margin-top: -8rem;
+  margin-left: 33px;
+  width: 2px;
+  height: 130px; /* Start with height 0 */
+  animation: lineAnimation 1s ease-out backwards;
+  animation-delay: 1s;
+}
+
+.whatsapp {
   
-  .instagram {
-    color: red;
-    position: fixed;
-    font-size: 35px;
-    margin-top: 31rem;
-    margin-left: -14px;
-    opacity: 0; /* Start with opacity 0 */
-    animation: iconPopUp 1s ease-out forwards;
-    animation-delay: 1.5s; /* Delay to start after previous icon */
-  }
-  
-  .linkedin {
-    color: blue;
-    position: fixed;
-    font-size: 35px;
-    margin-top: 28.5rem;
-    margin-left: -14px;
-    opacity: 0; /* Start with opacity 0 */
-    animation: iconPopUp 1s ease-out forwards;
-    animation-delay: 1s; /* Delay to start after previous icon */
-  }
-  
-  .githup{
-    color: rgb(255, 254, 254);
-    position: fixed;
-    font-size: 35px;
-    margin-top: 26rem;
-    margin-left: -14px;
-    opacity: 0; /* Start with opacity 0 */
-    animation: iconPopUp 1s ease-out forwards;
-    animation-delay: 0.5s; /* Delay to start after previous icon */
-  }
+  position: fixed;
+  font-size: 35px;
+  margin-top: -21.5rem;
+  margin-left: 17px;
+  opacity: 0; /* Start with opacity 0 */
+  animation: iconPopUp 1s ease-out forwards;
+  animation-delay: 1.5s; /* Delay to start after previous icon */
+}
+
+.instagram {
+  color: red;
+  position: fixed;
+  font-size: 35px;
+  margin-top: -18.5rem;
+  margin-left: 17px;
+  opacity: 0; /* Start with opacity 0 */
+  animation: iconPopUp 1s ease-out forwards;
+  animation-delay: 1.5s; /* Delay to start after previous icon */
+}
+
+.linkedin {
+  color: blue;
+  position: fixed;
+  font-size: 35px;
+  margin-top: -15.5rem;
+  margin-left: 14px;
+  opacity: 0; /* Start with opacity 0 */
+  animation: iconPopUp 1s ease-out forwards;
+  animation-delay: 1s; /* Delay to start after previous icon */
+}
+
+.githup{
+  color: rgb(255, 254, 254);
+  position: fixed;
+  font-size: 35px;
+  margin-top: -12.5rem;
+  margin-left: 14px;
+  opacity: 0; /* Start with opacity 0 */
+  animation: iconPopUp 1s ease-out forwards;
+  animation-delay: 0.5s; /* Delay to start after previous icon */
+}
 
 
    /* ------------------------------icon design end---------------------- */
@@ -106,10 +137,11 @@ body{
   
    
    .card{
+    position:relative;
 
 display: flex;
 flex-direction: row;
-height: 100vh;
+height: auto;
 align-items: center;
 justify-content:flex-start;
 color: white;
